@@ -1,3 +1,47 @@
+simple brunch skeleton
+===
+
+    1. master and jquery
+        only add jquery and bootstrap 3
+
+    2. d3
+        jquery, bootstrap3, d3
+
+brunch config 
+---
+    exports.config =
+      # See http://brunch.io/#documentation for docs.
+      conventions:
+        assets: /^app\/assets\//
+      modules:
+        definition: false
+        wrapper: false
+      paths:
+        public: 'static'
+      files:
+        javascripts:
+          joinTo:
+            'js/app.js': /^app/
+            'js/vendor.js': /^bower_components/
+        stylesheets:
+          joinTo: 'css/app.css'
+        templates:
+          joinTo: 'app.js'
+    
+    conventions
+        whitch dicrection while directly copy to paths: public,
+        in this config all /app/asserts/ files where directly copy
+        to(with out any mini or change) /static/ file
+        这个文件夹中的玩意会直接copy到paths下的public中
+
+    files
+        joinTo
+            in this config means all /app/ javascript(coffee) will 
+            compile to js/app.js file
+
+
+
+
 # Brunch app
 
 This is HTML5 application, built with [Brunch](http://brunch.io).
