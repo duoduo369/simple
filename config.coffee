@@ -6,7 +6,7 @@ exports.config =
     definition: false
     wrapper: false
   paths:
-    public: 'static'
+    public: 'public'
   files:
     javascripts:
       joinTo:
