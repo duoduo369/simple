@@ -1,7 +1,7 @@
 exports.config =
   # See http://brunch.io/#documentation for docs.
   conventions:
-    assets: /^app\/assets\//
+    assets: /(assets|font)/
   modules:
     definition: false
     wrapper: false

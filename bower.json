@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "public/app.js",
   "dependencies": {
-    "components-font-awesome": "4.0.3",
+    "font-awesome": "4.0.3",
     "pure": "0.4.2",
     "d3": "3.4.3",
     "angular": "1.2.15",
@@ -14,5 +14,9 @@
     "angular-cookies": "1.2.15",
     "angular-mocks": "1.2.15"
   },
-  "overrides": {}
+  "overrides": {
+    "font-awesome": {
+        "main": ["fonts", "css"]
+    }
+  }
 }
